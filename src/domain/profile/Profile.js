@@ -49,6 +49,7 @@ export class Profile extends Component{
                             <PicsContainer
                                 pics={this.state.user.pics}
                                 navigate={this.props.navigation.navigate}
+                                navigateTo={'Picture'}
                                 username={this.state.user.name}
                             />
                         </View>

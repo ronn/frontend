@@ -13,6 +13,7 @@ export const PicsContainer = props =>
                 pics={props.pics}
                 username={props.username}
                 navigate={props.navigate}
+                navigateTo={props.navigateTo}
             />
         )}
     />)

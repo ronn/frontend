@@ -4,7 +4,7 @@ import {styles} from "./style/styles";
 
 export const PicThumbnail = props =>
     <TouchableOpacity
-        onPress={() => props.navigate('Picture', {
+        onPress={() => props.navigate(props.navigateTo, {
             index: props.index,
             pics: props.pics,
             username: props.username
