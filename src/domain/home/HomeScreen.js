@@ -1,10 +1,9 @@
 import React, {useEffect, useState} from 'react';
-import {BackHandler, ScrollView, Text, View} from 'react-native';
+import {BackHandler, ScrollView} from 'react-native';
 import Wallpost from './components/Post';
 import Post from './model/Post';
-import {genericPost, getJson, post} from '../service/ApiService';
+import {getJson, post} from '../service/ApiService';
 import {useFocusEffect} from "@react-navigation/core";
-import {styles} from "./style/styles";
 
 function HomeScreen(props) {
 

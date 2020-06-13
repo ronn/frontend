@@ -1,33 +1,31 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {Text, TouchableOpacity, View} from 'react-native';
 import {styles} from './style/styles';
 import Icon from 'react-native-vector-icons/dist/AntDesign';
 import {getJson} from '../service/ApiService';
+import HomeScreen from "../home/HomeScreen";
 
-export class AlertBeforePic extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            attempts: undefined,
-            stopAlerts: false
-        };
-    }
+function AlertBeforePic(props) {
 
-    componentDidMount() {
-        getJson('/attempts')
-            .then(json => this.setState({attempts: json.attempts}))
-            .catch(error => alert('An error has occurred: ' + error))
-    }
+    const [attempts, setAttempts] = useState();
+    const [stopAlerts, setStopAlerts] = useState();
 
+    const LIMIT_OF_ATTEMPTS = 3;
+        useEffect(() => {
+            const totalAttempts = props.navigation.addListener('focus', () => {
+                getJson('/attempts')
+                    .then(json => setAttempts(json.attempts))
+                    .catch(error => alert('An error has occurred: ' + error))
+            });
+            // Return the function to unsubscribe from the event so it gets removed on unmount
+            return totalAttempts;
+        },[attempts]);
 
-
-    render(){
-        const LIMIT_OF_ATTEMPTS = 3;
-        const {navigate} = this.props.navigation;
         return(
-            this.state.attempts >= 0 && this.state.attempts < LIMIT_OF_ATTEMPTS
+            <View style={styles.alertContainer}>
+                { attempts >= 0 && attempts < LIMIT_OF_ATTEMPTS
                 ? (
-                    <View style={styles.alertContainer}>
+                    <View>
                         <View style={styles.alertText}>
                             <Text style={styles.title}>
                                 HOW SIQPIK WORKS:
@@ -41,17 +39,17 @@ export class AlertBeforePic extends React.Component {
                                     <Text style={styles.rulesText}>Once you take a picture a timer will start and you must post within that time or risk losing the photo.</Text>
                                 </View>
                                 <View>
-                                    <Text style={styles.rulesText}>You have a maximum of three photos per day. You have used {this.state.attempts} of 3 attempts </Text>
+                                    <Text style={styles.rulesText}>You have a maximum of three photos per day. You have used { attempts } of 3 attempts </Text>
                                 </View>
                             </View>
                         </View>
 
                         <View style={styles.alertButtons}>
 
-                            <TouchableOpacity style={styles.button} onPress={() => navigate('Home')}>
+                            <TouchableOpacity style={styles.button} onPress={() => props.navigation.navigate('Home')}>
                                 <Text style={styles.buttonText}> Cancel </Text>
                             </TouchableOpacity>
-                            <TouchableOpacity style={styles.button} onPress={() => navigate('TakePic')}>
+                            <TouchableOpacity style={styles.button} onPress={() =>  props.navigation.navigate('TakePic')}>
                                 <Text style={styles.buttonText}> Accept </Text>
                             </TouchableOpacity>
 
@@ -61,15 +59,15 @@ export class AlertBeforePic extends React.Component {
                             <Text style={styles.removeWarningText}>Don't Show Warning Again</Text>
 
 
-                            {this.state.stopAlerts === false ?
-                                <TouchableOpacity  onPress={() => this.setState ({stopAlerts:  true})}>
+                            {stopAlerts === false ?
+                                <TouchableOpacity  onPress={() => setStopAlerts(true)}>
                                     <Icon
                                         name="staro"
                                         size={30}
                                         color="black"/>
                                 </TouchableOpacity>
                                 :
-                                <TouchableOpacity onPress={() => this.setState ({stopAlerts:  false})}>
+                                <TouchableOpacity onPress={() => setStopAlerts( false)}>
                                     <Icon
                                         name="staro"
                                         size={30}
@@ -79,7 +77,7 @@ export class AlertBeforePic extends React.Component {
                         </View>
                     </View>
                 )
-                : this.state.attempts >= LIMIT_OF_ATTEMPTS
+                : attempts >= LIMIT_OF_ATTEMPTS
                     ? (
                         <View style={styles.alertContainer}>
                             <View>
@@ -92,14 +90,20 @@ export class AlertBeforePic extends React.Component {
 
                             </View>
                             <View>
-                            <TouchableOpacity style={styles.buttonHome} onPress={() => navigate('Home')}>
+                            <TouchableOpacity style={styles.buttonHome} onPress={() => props.navigation.navigate('Home')}>
                                 <Text style={styles.buttonText}> Back To Home Page </Text>
                             </TouchableOpacity>
                             </View>
                         </View>
-                    )
-                    : null
-        )
-    }
-}
 
+                    )
+                    :
+                    null
+                }
+
+                </View>
+
+        )}
+
+
+export default AlertBeforePic;
