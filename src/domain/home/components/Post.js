@@ -46,7 +46,7 @@ function Wallpost(props) {
                             }}
                             name="star"
                             size={35}
-                            color="black"
+                            color="orange"
                         />
                         :
                         <Icon

@@ -11,7 +11,7 @@ export const styles = StyleSheet.create({
         flex: 2,
         resizeMode: 'cover',
         height: Dimensions.get('screen').height / 2,
-        width: Dimensions.get('screen').width,
+        width: Dimensions.get('screen').width - 15,
         alignSelf: 'center',
     },
     userTitle: {
@@ -28,8 +28,8 @@ export const styles = StyleSheet.create({
         alignItems: 'flex-start'
     },
     name: {
-        fontSize: 18,
-        fontWeight: 'bold'
+        fontSize: 15,
+        //fontWeight: 'bold'
     },
     profilePic: {
         borderRadius: 80,
