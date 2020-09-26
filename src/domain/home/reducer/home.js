@@ -1,6 +1,6 @@
 const initialState = {}
 
-export const homeReducer = (state = initialState, action) => {
+export default (state = initialState, action) => {
     switch (action.type) {
         default:
             return state
