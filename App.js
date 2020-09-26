@@ -20,12 +20,14 @@ import CommentsPage from './src/domain/home/components/Comments';
 
 import Icon from 'react-native-vector-icons/MaterialIcons'
 import HeaderLogo from "./src/domain/shared/HeaderLogo";
+import store from "./src/config/store";
+import {Provider} from "react-redux";
 
 Icon.loadFont();
 
 const Stack = createStackNavigator()
 
-export default () => (<NavigationContainer>
+export default () => (<Provider store={store}><NavigationContainer>
   <Stack.Navigator
       headerLayoutPreset={'center'}
   >
@@ -89,4 +91,4 @@ export default () => (<NavigationContainer>
           }}
       />
   </Stack.Navigator>
-</NavigationContainer>)
+</NavigationContainer></Provider>)
