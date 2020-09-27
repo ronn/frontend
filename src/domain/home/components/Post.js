@@ -3,11 +3,9 @@ import { styles } from "../style/styles";
 import { Dimensions, Text, TextInput, TouchableOpacity, View, Image } from "react-native";
 import Icon from 'react-native-vector-icons/dist/AntDesign';
 import { ListItem } from "react-native-elements";
+import Request from "../../shared/model/Request";
 
 function Wallpost(props) {
-
-
-    const [picLiked, setPicLiked] = useState();
     const [comment, setComment] = useState();
 
     return (
@@ -25,7 +23,7 @@ function Wallpost(props) {
                     <TextInput style={styles.commentInput}
                         onChangeText={comment => setComment(comment)}
                         value={comment}
-                        onSubmitEditing={() => {comment ? (props.commentPost(props.photo.id, comment), setComment('')): setComment('') }} 
+                        onSubmitEditing={() => {comment ? (props.commentPost(props.photo.id, comment), setComment('')): setComment('') }}
                     />
                     {comment ?
                         <Icon name="rocket1"
@@ -39,29 +37,17 @@ function Wallpost(props) {
                         :
                         <Icon name="rocket1" size={30} color="white" />}
 
-                    {props.ilikeThisPic || picLiked ?
                         <Icon
-                            onPress={() => {
-                                props.likePost(props.photo.id);
-                                setPicLiked(false);
-                            }}
-                            name="star"
+                            onPress={() => {props.likePost(props.photo.id)}}
+                            name={props.ilikeThisPic ? "star" : "staro"}
                             size={35}
                             color="black"
                         />
-                        :
-                        <Icon
-                            onPress={() => {
-                                props.likePost(props.photo.id);
-                                setPicLiked(true);
-                            }}
-                            name="staro"
-                            size={35}
-                            color="black"
-                        />
-                    }
+
                 </View>
             </View>
+
+            {Request.ERROR === props.likeRequest && <View style={styles.post}><Text>{"Something wrong happened"}</Text></View>}
 
             {props.photo.comments.length >= 1 ?
                 <View style={styles.firstCommentContainer}>
@@ -82,7 +68,7 @@ function Wallpost(props) {
                         <Text style={styles.postFirstComment}>
                             View all {props.photo.comments.length} comments
                         </Text>
-                    </TouchableOpacity> 
+                    </TouchableOpacity>
                     :
                     <View style={styles.firstCommentContainer}>
                     <Text style={styles.firstComment}> </Text>
