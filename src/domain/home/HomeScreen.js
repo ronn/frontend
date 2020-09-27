@@ -11,9 +11,10 @@ import {styles} from "./style/styles";
 
 export default props => {
 
-    const {posts, postsRequest, errorMessage} = useSelector(state => ({
+    const {posts, postsRequest, errorMessage, likeRequest} = useSelector(state => ({
         posts: state.home.posts,
         postsRequest: state.home.postsRequest,
+        likeRequest: state.home.likeRequest,
         errorMessage: state.home.errorMessage
     }));
 
@@ -65,6 +66,7 @@ export default props => {
                     likePost={likePost(dispatch)}
                     commentPost={commentPost}
                     ilikeThisPic={post.ilikeThisPic}
+                    likeRequest={likeRequest}
                 />
                 )}
             </KeyboardAvoidingScrollView>
