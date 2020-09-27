@@ -1,5 +1,5 @@
 import {getJson, post} from "../../service/ApiService";
-import {errorPosts, gettingPosts, successPosts} from "../reducer/home";
+import {errorLikePost, errorPosts, gettingPosts, likeAPost, successLikePost, successPosts} from "../reducer/home";
 import Post from "../model/Post";
 
 export const getPosts = dispatch => {
@@ -12,10 +12,11 @@ export const getPosts = dispatch => {
 }
 
 export const likePost = dispatch => pictureID => {
-    dispatch(getPosts())
+    dispatch(likeAPost(pictureID))
+
     post('/picture/' + pictureID)
-        .then(getPosts())
-        .catch(error => alert(error))
+        .then(resp => dispatch(successLikePost(pictureID)))
+        .catch(error => dispatch(errorLikePost()))
 }
 
 export const commentPost = (pictureID, comment) => {
