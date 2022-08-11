@@ -12,22 +12,27 @@ import {
   Text,
 } from 'react-native';
 
-import {
-  Colors,
-} from 'react-native/Libraries/NewAppScreen';
-
 import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
 
 import BottomTabs from './components/bottom_tabs/bottom_tabs';
+// SCREEN IMPORTS
+import HomeScreen from './components/homescreen/HomeScreen';
+import FeedScreen from './components/feedScreen/FeedScreen';
+
+const Stack = createNativeStackNavigator();
 
 
 const App = () => {
- 
+
 
   return (
     <NavigationContainer>
-     <BottomTabs/>
-      <Text>HELLO</Text>
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Feed" component={FeedScreen} />
+      </Stack.Navigator>
     </NavigationContainer>
   );
 };

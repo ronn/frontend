@@ -1,18 +1,23 @@
 import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
 import {
     Text,
-    View
+    View,
+    Button
 } from 'react-native';
 
 
-const HomeScreen = () => {
+const HomeScreen = ({ navigation, props }) => {
 
     return (
         <View>
-                <Text>
-                    HELLO Again
-                </Text>
+            <Text>Home Screen</Text>
+            <Button
+                title="Go to Feed"
+                onPress={() => navigation.navigate('Feed')}
+            />
         </View>
     )
 }
