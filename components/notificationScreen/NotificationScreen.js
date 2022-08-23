@@ -9,11 +9,11 @@ import {
 } from 'react-native';
 
 
-const HomeScreen = ({ navigation, props }) => {
+const NotificationScreen = ({ navigation, props }) => {
 
     return (
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-            <Text>Home Screen</Text>
+            <Text>Notification Screen</Text>
             <Button
                 title="Go to Feed"
                 onPress={() => navigation.navigate('Feed')}
@@ -22,4 +22,4 @@ const HomeScreen = ({ navigation, props }) => {
     )
 }
 
-export default HomeScreen; 
+export default NotificationScreen; 

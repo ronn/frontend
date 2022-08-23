@@ -1,6 +1,6 @@
 import React from 'react';
-
-
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
 import {
     Text,
@@ -9,18 +9,17 @@ import {
 } from 'react-native';
 
 
-const FeedScreen = ({navigation, props}) => {
+const ProfileScreen = ({ navigation, props }) => {
 
     return (
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-            <Text>Feed Screen</Text>
-
+            <Text>Profile Screen</Text>
             <Button
-                title="Go to HomePage"
+                title="Go to Home"
                 onPress={() => navigation.navigate('Home')}
             />
         </View>
     )
 }
 
-export default FeedScreen; 
+export default ProfileScreen; 
