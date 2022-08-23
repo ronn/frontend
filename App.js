@@ -8,18 +8,15 @@
 
 import React from 'react';
 
-import {
-  Text,
-} from 'react-native';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 
-import BottomTabs from './components/bottom_tabs/bottom_tabs';
 // SCREEN IMPORTS
-import HomeScreen from './components/homescreen/homeScreen';
-import FeedScreen from './components/feedScreen/FeedScreen';
+import LoginScreen from './components/loginScreen/LoginScreen';
+import RootNavigation from './components/rootNavigation/rootNavigation';
+
 
 const Stack = createNativeStackNavigator();
 
@@ -30,8 +27,13 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="Feed" component={FeedScreen} />
+        <Stack.Screen name="Login" component={LoginScreen} />
+        <Stack.Screen name="RootNavigation" component={RootNavigation} 
+           options={{
+              title: 'Siqpik',
+              headerLeft: () => ('')
+          }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
