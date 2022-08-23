@@ -1,0 +1,6 @@
+module Pods_siqpik_siqpikTests {
+  umbrella header "Pods-siqpik-siqpikTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

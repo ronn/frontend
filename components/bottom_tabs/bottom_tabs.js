@@ -1,6 +1,5 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import HomeScreen from '../homescreen/HomeScreen'
 
 
 import {
@@ -17,8 +16,7 @@ const BottomTabs = () => {
             <Text>HELLO THERE</Text>
            
                 <Tab.Navigator>
-                    <Tab.Screen name="Home" component={HomeScreen} />
-
+                    
                 </Tab.Navigator>
             
         </View>
