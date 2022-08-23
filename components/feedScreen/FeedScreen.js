@@ -15,10 +15,7 @@ const FeedScreen = ({navigation, props}) => {
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
             <Text>Feed Screen</Text>
 
-            <Button
-                title="Go to HomePage"
-                onPress={() => navigation.navigate('Home')}
-            />
+           
         </View>
     )
 }

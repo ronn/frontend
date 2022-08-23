@@ -14,10 +14,7 @@ const NotificationScreen = ({ navigation, props }) => {
     return (
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
             <Text>Notification Screen</Text>
-            <Button
-                title="Go to Feed"
-                onPress={() => navigation.navigate('Feed')}
-            />
+          
         </View>
     )
 }

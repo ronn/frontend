@@ -15,8 +15,8 @@ const LoginScreen = ({ navigation, props }) => {
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
             <Text>Login Screen</Text>
             <Button
-                title="Go to Feed"
-                onPress={() => navigation.navigate('Feed')}
+                title="Go to Home Page"
+                onPress={() => navigation.navigate('RootNavigation')}
             />
         </View>
     )
