@@ -7,13 +7,14 @@ import {
 } from 'react-native';
 
 
-const ProfileScreen = ({ navigation, props }) => {
+const CameraScreen = ({ navigation, props }) => {
 
     return (
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-            <Text>Profile Screen</Text>
+            <Text>Camera Screen</Text>
+           
         </View>
     )
 }
 
-export default ProfileScreen; 
+export default CameraScreen; 

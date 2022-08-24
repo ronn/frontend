@@ -10,11 +10,13 @@ import {
 import { styles } from './style/style';
 
 
-const LoginScreen = ({ navigation, props }) => {
+const SignUpScreen = ({ navigation, props }) => {
 
     return (
         <SafeAreaView style={styles.container}>
-            <Text style={styles.title}>Siqpik</Text>
+            <View>
+                <Text style={styles.title}>Account Information</Text>
+            </View>
             <View>
                 <TextInput
                     style={styles.inputBox}
@@ -29,22 +31,22 @@ const LoginScreen = ({ navigation, props }) => {
 
                 <TouchableOpacity
                     style={styles.button}
-                    title="Login"
-                    onPress={() => navigation.navigate('RootNavigation')}
+                    title="Sign In"
+                    onPress={() => navigation.navigate('Login')}
                 >
-                    <Text style={styles.buttonText}>Login</Text>
+                    <Text style={styles.buttonText}>Sign In</Text>
                 </TouchableOpacity>
             </View>
             <View>
                 <TouchableOpacity
-                    title="Sign Up"
-                    onPress={() => navigation.navigate('Sign Up')}
+                    title="Log in"
+                    onPress={() => navigation.navigate('Login')}
                 >
-                    <Text style={styles.bottomText}>Sign Up!</Text>
+                    <Text style={styles.bottomText}>Login</Text>
                 </TouchableOpacity>
             </View>
         </SafeAreaView>
     )
 }
 
-export default LoginScreen; 
+export default SignUpScreen; 
