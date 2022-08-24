@@ -6,7 +6,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import FeedScreen from '../feedScreen/FeedScreen';
 import NotificationScreen from '../notificationScreen/NotificationScreen';
 import ProfileScreen from '../profileScreen/ProfileScreen';
-import HomeScreen from '../homescreen/HomeScreen'
+import HomeScreen from '../homescreen/homeScreen' 
 import CameraScreen from '../cameraScreen/camera';
 
 
