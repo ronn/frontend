@@ -11,6 +11,7 @@ MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.125.0] C:\Users\user\.
 MERGED from [:react-native-gesture-handler] C:\Users\user\Documents\siqpik_new\siqpik\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-safe-area-context] C:\Users\user\Documents\siqpik_new\siqpik\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-screens] C:\Users\user\Documents\siqpik_new\siqpik\node_modules\react-native-screens\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-vector-icons] C:\Users\user\Documents\siqpik_new\siqpik\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.react:react-native:0.69.3] C:\Users\user\.gradle\caches\transforms-3\6c57a244c46bee7c3ed93f50dd91c02f\transformed\jetified-react-native-0.69.3-debug\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\user\.gradle\caches\transforms-3\be0de3cf11ec57f11c305009ef72fc45\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [org.webkit:android-jsc:r250230] C:\Users\user\.gradle\caches\transforms-3\d2763e7b373a5e573d5349120b42cc8f\transformed\jetified-android-jsc-r250230\AndroidManifest.xml:2:1-11:12
@@ -181,6 +182,8 @@ MERGED from [:react-native-safe-area-context] C:\Users\user\Documents\siqpik_new
 MERGED from [:react-native-safe-area-context] C:\Users\user\Documents\siqpik_new\siqpik\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-screens] C:\Users\user\Documents\siqpik_new\siqpik\node_modules\react-native-screens\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-screens] C:\Users\user\Documents\siqpik_new\siqpik\node_modules\react-native-screens\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-vector-icons] C:\Users\user\Documents\siqpik_new\siqpik\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-vector-icons] C:\Users\user\Documents\siqpik_new\siqpik\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.react:react-native:0.69.3] C:\Users\user\.gradle\caches\transforms-3\6c57a244c46bee7c3ed93f50dd91c02f\transformed\jetified-react-native-0.69.3-debug\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.react:react-native:0.69.3] C:\Users\user\.gradle\caches\transforms-3\6c57a244c46bee7c3ed93f50dd91c02f\transformed\jetified-react-native-0.69.3-debug\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\user\.gradle\caches\transforms-3\be0de3cf11ec57f11c305009ef72fc45\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44

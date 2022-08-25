@@ -34,7 +34,7 @@ const SignUpScreen = ({ navigation, props }) => {
                     title="Sign In"
                     onPress={() => navigation.navigate('Login')}
                 >
-                    <Text style={styles.buttonText}>Sign In</Text>
+                    <Text style={styles.buttonText}>Create Account</Text>
                 </TouchableOpacity>
             </View>
             <View>
