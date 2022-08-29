@@ -26,7 +26,13 @@ const RootNavigation = ({ }) => {
           if (route.name === 'Home') {
             iconName = focused ? 'home' : 'home-outline';
           } else if (route.name === 'Feed') {
-            iconName = focused ? 'home' : 'home-outline';
+            iconName = focused ? 'md-search' : 'md-search-outline';
+          } else if (route.name === 'Camera') {
+            iconName = focused ? 'camera' : 'camera-outline';
+          } else if (route.name === 'Notification') {
+            iconName = focused ? 'notifications-sharp' : 'notifications-outline';
+          } else if (route.name === 'Profile') {
+            iconName = focused ? 'person' : 'person-outline';
           }
           return <Ionicons name={iconName} size={size} color={color} />;
         },
