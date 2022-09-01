@@ -9,6 +9,8 @@ import {
 
 const ProfileScreen = ({ navigation, props }) => {
 
+    console.log("Profile Screen!")
+
     return (
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
             <Text>Profile Screen</Text>
