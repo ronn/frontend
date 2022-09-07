@@ -10,6 +10,22 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/siqpik.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/siqpik.app.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/siqpik.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/siqpik.app.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/siqpik.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/siqpik.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/24976134/siqpik.react-native-gesture-handler.iml" filepath="$PROJECT_DIR$/.idea/modules/24976134/siqpik.react-native-gesture-handler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/24976134/siqpik.react-native-gesture-handler.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/24976134/siqpik.react-native-gesture-handler.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/24976134/siqpik.react-native-gesture-handler.main.iml" filepath="$PROJECT_DIR$/.idea/modules/24976134/siqpik.react-native-gesture-handler.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/24976134/siqpik.react-native-gesture-handler.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/24976134/siqpik.react-native-gesture-handler.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1116370449/siqpik.react-native-safe-area-context.iml" filepath="$PROJECT_DIR$/.idea/modules/-1116370449/siqpik.react-native-safe-area-context.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1116370449/siqpik.react-native-safe-area-context.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-1116370449/siqpik.react-native-safe-area-context.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1116370449/siqpik.react-native-safe-area-context.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-1116370449/siqpik.react-native-safe-area-context.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1116370449/siqpik.react-native-safe-area-context.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-1116370449/siqpik.react-native-safe-area-context.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-114771769/siqpik.react-native-screens.iml" filepath="$PROJECT_DIR$/.idea/modules/-114771769/siqpik.react-native-screens.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-114771769/siqpik.react-native-screens.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-114771769/siqpik.react-native-screens.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-114771769/siqpik.react-native-screens.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-114771769/siqpik.react-native-screens.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-114771769/siqpik.react-native-screens.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-114771769/siqpik.react-native-screens.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/262163088/siqpik.react-native-vector-icons.iml" filepath="$PROJECT_DIR$/.idea/modules/262163088/siqpik.react-native-vector-icons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/262163088/siqpik.react-native-vector-icons.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/262163088/siqpik.react-native-vector-icons.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/262163088/siqpik.react-native-vector-icons.main.iml" filepath="$PROJECT_DIR$/.idea/modules/262163088/siqpik.react-native-vector-icons.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/262163088/siqpik.react-native-vector-icons.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/262163088/siqpik.react-native-vector-icons.unitTest.iml" />
     </modules>
   </component>
 </project>
