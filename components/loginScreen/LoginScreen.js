@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
     Text,
     SafeAreaView,
@@ -7,10 +7,42 @@ import {
     View
 } from 'react-native';
 
-import { styles } from './style/style';
+// STYLE
+import { styles } from './style/style'
+
+// Authentication
+import { authenticate } from '../service/AuthenticationService'
 
 
 const LoginScreen = ({ navigation, props }) => {
+
+
+    const [username, setUserName] = useState('');
+    const [password, setPassWord] = useState('');
+    const [showSuccessMessage, setSuccessMessage] = useState(false);
+    const [formUnFilled, setFormUnFilled] = useState(false);
+    const [hasLoginFailed, setHasLoginFailed] = useState(false);
+    const [signUpButtonEnabled, setCountSignUpButton] = useState(false);
+    const [loginButtonDisabled, setLoginButtonDisabled] = useState(false);
+
+
+    loginClicked = () => () => {
+        if (!(username || password)) {
+            setFormUnFilled(true);
+        } else {
+            setLoginButtonDisabled(true)
+            setHasLoginFailed(false)
+            authenticate(username, password)
+                .then(() => navigation.navigate('RootNavigation'))
+                .catch(() => {
+                    setSuccessMessage(false)
+                    setFormUnFilled(false)
+                    setHasLoginFailed(true)
+                    setLoginButtonDisabled(false)
+                })
+        }
+    }
+
 
     return (
         <SafeAreaView style={styles.container}>
@@ -18,22 +50,27 @@ const LoginScreen = ({ navigation, props }) => {
             <View>
                 <TextInput
                     style={styles.inputBox}
-                    placeholder="User Name"
-
+                    placeholder='Username'
+                    onChangeText={userName => setUserName(userName)}
+                    value={username}
                 ></TextInput>
                 <TextInput
                     style={styles.inputBox}
-                    placeholder="Password"
+                    placeholder='Password'
+                    secureTextEntry={true}
+                    onChangeText={password => setPassWord(password)}
+                    value={password}
 
                 ></TextInput>
-
-                <TouchableOpacity
-                    style={styles.button}
-                    title="Login"
-                    onPress={() => navigation.navigate('RootNavigation')}
-                >
-                    <Text style={styles.buttonText}>Login</Text>
-                </TouchableOpacity>
+                {
+                    !loginButtonDisabled &&
+                    <TouchableOpacity
+                        style={styles.button}
+                        title="Login"
+                        onPress={ () => console.log(username, password)}                    >
+                        <Text style={styles.buttonText}>Login</Text>
+                    </TouchableOpacity>
+                }
             </View>
             <View>
                 <TouchableOpacity

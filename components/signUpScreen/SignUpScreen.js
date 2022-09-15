@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
     Text,
     SafeAreaView,
@@ -12,6 +12,16 @@ import { styles } from './style/style';
 
 const SignUpScreen = ({ navigation, props }) => {
 
+    // React State Not Global
+    const [email, setEmail] = useState('');
+    const [username, setUserName] = useState('');
+    const [pass, setPassWord] = useState('');
+    const [showSuccessMessage, setSuccessMessage] = useState(false);
+    const [formUnFilled, setFormUnFilled] = useState(false);
+    const [correctEmail, setCorrectEmail] = useState(true);
+    const [signUpButtonEnabled, setCountSignUpButton] = useState(false);
+
+
     return (
         <SafeAreaView style={styles.container}>
             <View>
@@ -20,8 +30,9 @@ const SignUpScreen = ({ navigation, props }) => {
             <View>
                 <TextInput
                     style={styles.inputBox}
-                    placeholder="User Name"
-
+                    placeholder="Email"
+                    onChangeText={email => setEmail(email)}
+                    value={email}
                 ></TextInput>
                 <TextInput
                     style={styles.inputBox}

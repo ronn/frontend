@@ -9,13 +9,14 @@ MERGED from [:react-native-flipper] C:\Users\user\Documents\siqpik_new\siqpik\no
 MERGED from [com.facebook.flipper:flipper:0.125.0] C:\Users\user\.gradle\caches\transforms-3\f459484025099807ab553e4162bff15b\transformed\jetified-flipper-0.125.0\AndroidManifest.xml:8:1-18:12
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.125.0] C:\Users\user\.gradle\caches\transforms-3\1fa79f06eb13c8bf04debb5d13b6326a\transformed\jetified-flipper-network-plugin-0.125.0\AndroidManifest.xml:8:1-15:12
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.125.0] C:\Users\user\.gradle\caches\transforms-3\6145be92a049f3e382cddfc1628ad376\transformed\jetified-flipper-fresco-plugin-0.125.0\AndroidManifest.xml:8:1-15:12
+MERGED from [:react-native-async-storage_async-storage] C:\Users\user\Documents\siqpik_new\siqpik\node_modules\@react-native-async-storage\async-storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-gesture-handler] C:\Users\user\Documents\siqpik_new\siqpik\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-safe-area-context] C:\Users\user\Documents\siqpik_new\siqpik\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-screens] C:\Users\user\Documents\siqpik_new\siqpik\node_modules\react-native-screens\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-vector-icons] C:\Users\user\Documents\siqpik_new\siqpik\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.react:react-native:0.69.3] C:\Users\user\.gradle\caches\transforms-3\6c57a244c46bee7c3ed93f50dd91c02f\transformed\jetified-react-native-0.69.3-debug\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\user\.gradle\caches\transforms-3\be0de3cf11ec57f11c305009ef72fc45\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [org.webkit:android-jsc:r250230] C:\Users\user\.gradle\caches\transforms-3\d2763e7b373a5e573d5349120b42cc8f\transformed\jetified-android-jsc-r250230\AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:hermes-engine:0.69.3] C:\Users\user\.gradle\caches\transforms-3\9b65a3102495827c3cac5d8ba3bec109\transformed\jetified-hermes-engine-0.69.3-debug\AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:flipper:2.6.0] C:\Users\user\.gradle\caches\transforms-3\bd9ecdc24e5584004257a8b10fa9fd1d\transformed\jetified-flipper-2.6.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:stetho:2.6.0] C:\Users\user\.gradle\caches\transforms-3\0ff9ecbd87ffcf4b88e3693789bf12b8\transformed\jetified-stetho-2.6.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:fresco:2.6.0] C:\Users\user\.gradle\caches\transforms-3\8a6a389e265d4b5fb97e6e1a7f05681e\transformed\jetified-fresco-2.6.0\AndroidManifest.xml:2:1-9:12
@@ -179,6 +180,8 @@ MERGED from [com.facebook.flipper:flipper-network-plugin:0.125.0] C:\Users\user\
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.125.0] C:\Users\user\.gradle\caches\transforms-3\1fa79f06eb13c8bf04debb5d13b6326a\transformed\jetified-flipper-network-plugin-0.125.0\AndroidManifest.xml:11:5-13:41
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.125.0] C:\Users\user\.gradle\caches\transforms-3\6145be92a049f3e382cddfc1628ad376\transformed\jetified-flipper-fresco-plugin-0.125.0\AndroidManifest.xml:11:5-13:41
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.125.0] C:\Users\user\.gradle\caches\transforms-3\6145be92a049f3e382cddfc1628ad376\transformed\jetified-flipper-fresco-plugin-0.125.0\AndroidManifest.xml:11:5-13:41
+MERGED from [:react-native-async-storage_async-storage] C:\Users\user\Documents\siqpik_new\siqpik\node_modules\@react-native-async-storage\async-storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-async-storage_async-storage] C:\Users\user\Documents\siqpik_new\siqpik\node_modules\@react-native-async-storage\async-storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-gesture-handler] C:\Users\user\Documents\siqpik_new\siqpik\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-gesture-handler] C:\Users\user\Documents\siqpik_new\siqpik\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-safe-area-context] C:\Users\user\Documents\siqpik_new\siqpik\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
@@ -191,8 +194,8 @@ MERGED from [com.facebook.react:react-native:0.69.3] C:\Users\user\.gradle\cache
 MERGED from [com.facebook.react:react-native:0.69.3] C:\Users\user\.gradle\caches\transforms-3\6c57a244c46bee7c3ed93f50dd91c02f\transformed\jetified-react-native-0.69.3-debug\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\user\.gradle\caches\transforms-3\be0de3cf11ec57f11c305009ef72fc45\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\user\.gradle\caches\transforms-3\be0de3cf11ec57f11c305009ef72fc45\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [org.webkit:android-jsc:r250230] C:\Users\user\.gradle\caches\transforms-3\d2763e7b373a5e573d5349120b42cc8f\transformed\jetified-android-jsc-r250230\AndroidManifest.xml:7:5-9:41
-MERGED from [org.webkit:android-jsc:r250230] C:\Users\user\.gradle\caches\transforms-3\d2763e7b373a5e573d5349120b42cc8f\transformed\jetified-android-jsc-r250230\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:hermes-engine:0.69.3] C:\Users\user\.gradle\caches\transforms-3\9b65a3102495827c3cac5d8ba3bec109\transformed\jetified-hermes-engine-0.69.3-debug\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.react:hermes-engine:0.69.3] C:\Users\user\.gradle\caches\transforms-3\9b65a3102495827c3cac5d8ba3bec109\transformed\jetified-hermes-engine-0.69.3-debug\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:flipper:2.6.0] C:\Users\user\.gradle\caches\transforms-3\bd9ecdc24e5584004257a8b10fa9fd1d\transformed\jetified-flipper-2.6.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:flipper:2.6.0] C:\Users\user\.gradle\caches\transforms-3\bd9ecdc24e5584004257a8b10fa9fd1d\transformed\jetified-flipper-2.6.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:stetho:2.6.0] C:\Users\user\.gradle\caches\transforms-3\0ff9ecbd87ffcf4b88e3693789bf12b8\transformed\jetified-stetho-2.6.0\AndroidManifest.xml:5:5-7:41
