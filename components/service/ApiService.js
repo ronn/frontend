@@ -2,8 +2,8 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import {TOKEN_SESSION} from './AuthenticationService';
 
 //const HOST_URL = 'http://172.30.0.139:8080';
-export const HOST_URL = 'https://siqpik.herokuapp.com';
-export const API_URL = HOST_URL + '/api';
+export const HOST_URL = 'https://siqpik-dev.herokuapp.com';
+export const API_URL = HOST_URL;
 
 export const post = (url, body, contentType) => authenticatedRequest(url, 'POST', body, contentType);
 

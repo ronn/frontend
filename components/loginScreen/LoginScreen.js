@@ -26,14 +26,15 @@ const LoginScreen = ({ navigation, props }) => {
     const [loginButtonDisabled, setLoginButtonDisabled] = useState(false);
 
 
-    loginClicked = () => () => {
+    loginClicked = () => {
         if (!(username || password)) {
             setFormUnFilled(true);
         } else {
             setLoginButtonDisabled(true)
             setHasLoginFailed(false)
+            
             authenticate(username, password)
-                .then(() => navigation.navigate('RootNavigation'))
+                .then(() => (navigation.navigate('RootNavigation'), console.log("Navigate here") ))
                 .catch(() => {
                     setSuccessMessage(false)
                     setFormUnFilled(false)
@@ -63,15 +64,18 @@ const LoginScreen = ({ navigation, props }) => {
 
                 ></TextInput>
                 {
-                    !loginButtonDisabled &&
+                    
                     <TouchableOpacity
                         style={styles.button}
                         title="Login"
-                        onPress={ () => console.log(username, password)}                    >
+                        onPress={() => loginClicked(username, password)}                    >
                         <Text style={styles.buttonText}>Login</Text>
                     </TouchableOpacity>
                 }
             </View>
+            {hasLoginFailed && <Text style={{ color: 'red' }}>Invalid Credentials</Text>}
+            {formUnFilled && <Text style={{ color: 'red' }}>Please fill the fields</Text>}
+            {showSuccessMessage && <Text>Login Successful</Text>}
             <View>
                 <TouchableOpacity
                     title="Sign Up"
