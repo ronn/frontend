@@ -8,9 +8,13 @@
 
 import React from 'react';
 
-
+// NAVIGATION
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+// REDUX STORE
+import { store } from './store'
+import { Provider } from 'react-redux'
 
 
 // SCREEN IMPORTS
@@ -25,22 +29,24 @@ const App = () => {
 
 
   return (
-    <NavigationContainer>
-      <Stack.Navigator >
-        <Stack.Screen name="Login" component={LoginScreen} 
-        options={{headerShown: false}} 
-        />
-        <Stack.Screen name="Sign Up" component={SignUpScreen} 
-        options={{headerShown: false}} 
-        />
-        <Stack.Screen name="RootNavigation" component={RootNavigation} 
-           options={{
+    <Provider store={store}>
+      <NavigationContainer>
+        <Stack.Navigator >
+          <Stack.Screen name="Login" component={LoginScreen}
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen name="Sign Up" component={SignUpScreen}
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen name="RootNavigation" component={RootNavigation}
+            options={{
               title: 'Siqpik',
               headerLeft: () => ('')
-          }}
-        />
-      </Stack.Navigator>
-    </NavigationContainer>
+            }}
+          />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </Provider>
   );
 };
 
