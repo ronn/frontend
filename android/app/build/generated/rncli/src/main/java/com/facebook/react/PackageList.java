@@ -21,6 +21,8 @@ import com.th3rdwave.safeareacontext.SafeAreaContextPackage;
 import com.swmansion.rnscreens.RNScreensPackage;
 // react-native-vector-icons
 import com.oblador.vectoricons.VectorIconsPackage;
+// react-native-vision-camera
+import com.mrousavy.camera.CameraPackage;
 // react-native-flipper
 import com.facebook.flipper.reactnative.FlipperPackage;
 
@@ -73,6 +75,7 @@ public class PackageList {
       new SafeAreaContextPackage(),
       new RNScreensPackage(),
       new VectorIconsPackage(),
+      new CameraPackage(),
       new FlipperPackage()
     ));
   }

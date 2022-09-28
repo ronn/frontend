@@ -30,10 +30,12 @@
     <content url="file://$MODULE_DIR$/../../../app/src/androidTestDebug" />
     <orderEntry type="jdk" jdkName="Android API 31 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="siqpik.react-native-async-storage_async-storage.main" scope="TEST" />
     <orderEntry type="module" module-name="siqpik.react-native-gesture-handler.main" scope="TEST" />
     <orderEntry type="module" module-name="siqpik.react-native-safe-area-context.main" scope="TEST" />
     <orderEntry type="module" module-name="siqpik.react-native-screens.main" scope="TEST" />
     <orderEntry type="module" module-name="siqpik.react-native-vector-icons.main" scope="TEST" />
+    <orderEntry type="module" module-name="siqpik.react-native-flipper.main" scope="TEST" />
     <orderEntry type="module" module-name="siqpik.app.main" scope="TEST" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.parse.bolts:bolts-tasks:1.4.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.facebook.infer.annotation:infer-annotation:0.18.0" level="project" />
@@ -61,7 +63,7 @@
     <orderEntry type="library" scope="TEST" name="Gradle: com.facebook.flipper:flipper-fresco-plugin:0.125.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.facebook.react:react-native:0.69.3:debug@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.swiperefreshlayout:swiperefreshlayout:1.0.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: org.webkit:android-jsc:r250230@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.facebook.react:hermes-engine:0.69.3:debug@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.appcompat:appcompat:1.4.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.appcompat:appcompat-resources:1.4.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.autofill:autofill:1.1.0@aar" level="project" />

@@ -15,7 +15,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const Tab = createBottomTabNavigator();
 
-const RootNavigation = ({ }) => {
+const RootNavigation = ({ navigation}) => {
 
   return (
     <Tab.Navigator
@@ -29,6 +29,8 @@ const RootNavigation = ({ }) => {
             iconName = focused ? 'md-search' : 'md-search-outline';
           } else if (route.name === 'Camera') {
             iconName = focused ? 'camera' : 'camera-outline';
+            screenOptions={headerShown: false }
+           
           } else if (route.name === 'Notification') {
             iconName = focused ? 'notifications-sharp' : 'notifications-outline';
           } else if (route.name === 'Profile') {
@@ -45,7 +47,7 @@ const RootNavigation = ({ }) => {
       })}>
       <Tab.Screen name="Home" component={HomeScreen} />
       <Tab.Screen name="Feed" component={FeedScreen} />
-      <Tab.Screen name="Camera" component={CameraScreen} />
+      <Tab.Screen name="Camera" component={CameraScreen} options={{headerShown: false, tabBarStyle: { display: 'none' }}} />
       <Tab.Screen name="Notification" component={NotificationScreen} />
       <Tab.Screen name="Profile" component={ProfileScreen} />
 
