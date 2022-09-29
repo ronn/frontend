@@ -1,14 +1,17 @@
 import React, {useEffect, useRef} from 'react';
 
-import { Camera, CameraPermissionStatus, useCameraDevices } from 'react-native-vision-camera';
-import {useIsFocused} from "@react-navigation/native"
 import {
     Text,
     View,
     StyleSheet
 } from 'react-native';
 
+// react-native-vision-camera
+import { Camera, CameraPermissionStatus, useCameraDevices } from 'react-native-vision-camera';
+import { useIsFocused } from "@react-navigation/native"
 
+// Camera buttons
+import { CameraButtons } from './cameraButtons';
 
 const CameraScreen = ({ navigation, props }) => {
     
@@ -36,6 +39,7 @@ const CameraScreen = ({ navigation, props }) => {
         console.log('Photo taking ....');
         const photo = await camera.current.takePhoto(takePhotoOptions);
         console.log(photo.path)
+        console.log(photo)
       } catch (error) {
         console.log(error);
       }
@@ -63,7 +67,7 @@ const CameraScreen = ({ navigation, props }) => {
                       isActive={isFocused}
                       photo={true}
                     />
-                   
+                    <CameraButtons takePicture={takePhoto}/>
                   </>
                 )}
             </View>
