@@ -5,7 +5,7 @@ import {TOKEN_SESSION} from './AuthenticationService';
 export const HOST_URL = 'https://siqpik-dev.herokuapp.com';
 export const API_URL = HOST_URL;
 
-export const post = (url, body, contentType) => authenticatedRequest(url, 'POST', body, contentType);
+export const post = (url, body) => authenticatedRequest(url, 'POST', body);
 
 export const deleteItem = (url, body, contentType) => authenticatedRequest(url, 'DELETE', body, contentType);
 
